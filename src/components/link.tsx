@@ -8,7 +8,7 @@ const Link = styled.a`
   text-decoration: none;
   color: inherit;
   font-family: Arial sans-serif;
-  font-size: xx-large;
+  font-size: x-large;
 `;
 
 /**
