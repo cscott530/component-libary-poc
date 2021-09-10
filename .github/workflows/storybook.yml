@@ -1,8 +1,7 @@
 name: Storybook Deploy
 on:
-  [push]
-  # push:
-  #   paths: ['stories/**', 'src/components/**'] # Trigger the action only when files change in the folders defined here
+  push:
+    paths: ['stories/**', 'src/components/**'] # Trigger the action only when files change in the folders defined here
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
