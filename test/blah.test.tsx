@@ -5,7 +5,7 @@ import { Default as Button, Primary } from '../stories/Button.stories';
 describe('Button', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Button />, div);
+    ReactDOM.render(<Button text="Test"/>, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });
@@ -13,12 +13,7 @@ describe('Button', () => {
 describe('Primary Button', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Primary />, div);
+    ReactDOM.render(<Primary text="Test" />, div);
     ReactDOM.unmountComponentAtNode(div);
-  });
-
-  it('has the expected default props', () => {
-    let button = <Primary />;
-    expect(button.props.primary).toBe(true);
   });
 });
