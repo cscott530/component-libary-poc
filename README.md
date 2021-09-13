@@ -1,5 +1,5 @@
 # Insider Intelligence Component Library
 
-Install locally using `verdaccio`
+Internal proof of concept component library
 
 View [Storybook](https://cscott530.github.io/component-libary-poc/)
