@@ -5,9 +5,6 @@ import { IIButton, ButtonProps } from '../src/components/button';
 const meta: Meta = {
   title: 'Components/II Button',
   component: IIButton,
-  argTypes: {
-    onClick: { action: 'clicked' }
-  },
   parameters: {
     controls: { expanded: true }
   },
