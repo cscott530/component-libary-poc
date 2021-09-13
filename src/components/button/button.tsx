@@ -4,11 +4,12 @@ import Button from './button.styled';
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /** 
    * Text that goes inside the button 
-   * @default Button Text Here */
+   * @default Button Text Here 
+   */
   text: string,
   /**
    * Whether or not the button border should be rounded. Defaults to `false`
-   * @default `false`
+   * @default false
    */
   rounded?: boolean,
   /**
