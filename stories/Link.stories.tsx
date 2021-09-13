@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import { IILink, LinkProps } from '../src/components/link';
 
 const meta: Meta = {
-  title: 'II Link',
+  title: 'Components/II Link',
   component: IILink,
   parameters: {
     children: {

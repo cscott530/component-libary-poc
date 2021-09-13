@@ -3,11 +3,8 @@ import { Meta, Story } from '@storybook/react';
 import { IIButton, ButtonProps } from '../src/components/button';
 
 const meta: Meta = {
-  title: 'II Button',
+  title: 'Components/II Button',
   component: IIButton,
-  argTypes: {
-    onClick: { action: 'clicked' }
-  },
   parameters: {
     controls: { expanded: true }
   },
