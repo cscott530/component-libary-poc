@@ -1,4 +1,4 @@
-# Insider Intelligence Component Library
+# Component Library
 
 Internal proof of concept component library
 
