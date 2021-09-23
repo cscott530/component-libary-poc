@@ -17,8 +17,7 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o docs-build",
-    "publish": "npm publish --"
+    "build-storybook": "build-storybook -o docs-build"
   },
   "peerDependencies": {
     "react": ">=16"
