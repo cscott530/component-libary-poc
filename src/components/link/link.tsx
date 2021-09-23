@@ -17,5 +17,5 @@ export interface LinkProps extends HTMLAttributes<HTMLAnchorElement> {
  * @author Insider Intelligence
  */
 export const IILink: FC<LinkProps> = ({text, ...rest}) => {
-  return <Link {...rest} href='#'>{text || 'Link Text Here'}</Link>;
+  return <Link {...rest}>{text || 'Link Text Here'}</Link>;
 };
