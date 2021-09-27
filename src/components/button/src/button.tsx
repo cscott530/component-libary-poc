@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { ButtonProps } from '../dist';
 import Button from './button.styled';
 
 export interface ButtonProps {
@@ -26,5 +27,9 @@ export interface ButtonProps {
  * @author Insider Intelligence
  */
 export const IIButton: FC<ButtonProps> = ({ text, rounded, primary, ...rest }) => {
-  return <Button rounded={rounded} primary={primary} {...rest}>{text || `Button Text Here`}</Button>;
+  return <Button rounded={rounded} primary={primary} {...rest}>{text}</Button>;
+};
+
+IIButton.defaultProps = {
+  text: 'Button Text Here'
 };
