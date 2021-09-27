@@ -60,5 +60,6 @@
   },
   "dependencies": {
     "styled-components": "^5.3.1"
-  }
+  },
+  "gitHead": "d77d37bd83bcb37efca8c8f884a8976e1c852561"
 }

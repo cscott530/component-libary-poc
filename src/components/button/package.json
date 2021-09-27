@@ -11,5 +11,6 @@
     "prepare": "tsdx build"
   },
   "author": "Chris Scott",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "d77d37bd83bcb37efca8c8f884a8976e1c852561"
 }
