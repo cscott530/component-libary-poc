@@ -1,8 +1,15 @@
 {
-  "name": "@ii/button",
   "version": "1.2.1",
-  "description": "II/Button",
+  "license": "MIT",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
@@ -10,7 +17,32 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build"
   },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@ii/button",
   "author": "Chris Scott",
-  "license": "ISC",
+  "module": "dist/button.esm.js",
+  "devDependencies": {
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "husky": "^7.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3"
+  },
   "gitHead": "8dae8ba78fe25b570a096c87b09d3f241a52074a"
 }

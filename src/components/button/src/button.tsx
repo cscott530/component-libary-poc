@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { ButtonProps } from '../dist';
 import Button from './button.styled';
 
 export interface ButtonProps {
