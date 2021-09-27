@@ -1,7 +1,7 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { FC } from 'react';
 import Button from './button.styled';
 
-export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps {
   /** 
    * Text that goes inside the button 
    * @default Button Text Here 

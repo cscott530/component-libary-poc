@@ -1,15 +1,22 @@
-import React, { FC, AnchorHTMLAttributes } from 'react';
+import React, { FC } from 'react';
 import Link from './link.styled';
 
 /**
  * Link Properties
  */
-export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface LinkProps {
   /**
    * Text inside the link
    * @default Link Text Here
    */
-  text: string
+  text: string,
+
+  /**
+   * Link's href
+   * 
+   * @default '#'
+   */
+  href: string
 }
 
 /**
