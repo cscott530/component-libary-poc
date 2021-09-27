@@ -1,10 +1,10 @@
-import React, { FC, HTMLAttributes } from 'react';
+import React, { FC, AnchorHTMLAttributes } from 'react';
 import Link from './link.styled';
 
 /**
  * Link Properties
  */
-export interface LinkProps extends HTMLAttributes<HTMLAnchorElement> {
+export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   /**
    * Text inside the link
    * @default Link Text Here
@@ -17,5 +17,10 @@ export interface LinkProps extends HTMLAttributes<HTMLAnchorElement> {
  * @author Insider Intelligence
  */
 export const IILink: FC<LinkProps> = ({text, ...rest}) => {
-  return <Link {...rest}>{text || 'Link Text Here'}</Link>;
+  return <Link {...rest}>{text}</Link>;
 };
+
+IILink.defaultProps = {
+  text: 'Link Text Here',
+  href: '#'
+}
