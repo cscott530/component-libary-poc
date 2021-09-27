@@ -6,7 +6,7 @@ export interface ButtonProps {
    * Text that goes inside the button 
    * @default Button Text Here 
    */
-  text: string,
+  text?: string,
   /**
    * Whether or not the button border should be rounded. Defaults to `false`
    * @default false
