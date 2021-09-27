@@ -1,5 +1,5 @@
 {
-  "packages": ["packages/*"],
+  "packages": ["src/components/*"],
   "version": "independent",
   "command": {
     "publish": {
@@ -8,7 +8,6 @@
       "registry": "http://localhost:4873"
     },
     "bootstrap": {
-      "ignore": "component-*",
       "npmClientArgs": ["--no-package-lock"]
     }
   }
