@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { IIButton, ButtonProps } from '../src/components/button';
+import { IIButton, ButtonProps } from '../src';
 
 const meta: Meta = {
   title: 'Molecules/II Button',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { TextInput, TextInputProps } from '../src/components/text-input';
+import { TextInput, TextInputProps } from '../src';
 
 const meta: Meta = {
   title: 'Molecules/II Text Input',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { IILink, LinkProps } from '../src/components/link';
+import { IILink, LinkProps } from '../src';
 
 const meta: Meta = {
   title: 'Molecules/II Link',
