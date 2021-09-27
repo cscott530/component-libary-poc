@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { IIForm, FormProps } from '../src';
+import { IIForm, FormProps } from '../src/components/form';
 
 const meta: Meta = {
   title: 'Atoms/Form',
