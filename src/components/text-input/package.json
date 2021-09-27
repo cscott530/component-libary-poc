@@ -15,9 +15,7 @@
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "size": "size-limit",
-    "analyze": "size-limit --why"
+    "prepare": "tsdx build"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -36,24 +34,12 @@
   "name": "@ii/text-input",
   "author": "Chris Scott",
   "module": "dist/text-input.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/text-input.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/text-input.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^5.0.4",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
     "husky": "^7.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "size-limit": "^5.0.4",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
     "typescript": "^4.4.3"
@@ -61,5 +47,5 @@
   "dependencies": {
     "styled-components": "^5.3.1"
   },
-  "gitHead": "58e7feac80d2a5d40c666e1a2d893e4e34aa50a3"
+  "gitHead": "51508b73f1417c58e188076ce4c431bf3ea20310"
 }
