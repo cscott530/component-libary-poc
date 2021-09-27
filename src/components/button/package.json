@@ -1,11 +1,16 @@
 {
   "name": "@ii/button",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "II/Button",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
   },
   "author": "Chris Scott",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "58e7feac80d2a5d40c666e1a2d893e4e34aa50a3"
 }

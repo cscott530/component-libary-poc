@@ -1,9 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { IIButton, ButtonProps } from '../src/components/button';
+import { IIButton, ButtonProps } from '../src';
 
 const meta: Meta = {
-  title: 'Components/II Button',
+  title: 'Molecules/II Button',
   component: IIButton,
   parameters: {
     controls: { expanded: true }

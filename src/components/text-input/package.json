@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "1.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -31,9 +31,9 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@ii/link",
+  "name": "@ii/text-input",
   "author": "Chris Scott",
-  "module": "dist/link.esm.js",
+  "module": "dist/text-input.esm.js",
   "devDependencies": {
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
@@ -43,5 +43,9 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
     "typescript": "^4.4.3"
-  }
+  },
+  "dependencies": {
+    "styled-components": "^5.3.1"
+  },
+  "gitHead": "51508b73f1417c58e188076ce4c431bf3ea20310"
 }
