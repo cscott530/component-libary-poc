@@ -2,7 +2,7 @@
   "name": "@ii/button",
   "version": "1.1.0",
   "description": "II/Button",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
