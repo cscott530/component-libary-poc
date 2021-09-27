@@ -1,6 +1,6 @@
 {
   "name": "@ii/button",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "II/Button",
   "main": "index.js",
   "scripts": {
