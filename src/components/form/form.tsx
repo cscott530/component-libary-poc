@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Form } from './form.styled';
-import { IIButton } from '@ii/button';
+import { IIButton } from '../button';
 
 export interface FormProps {
   theme?: 'light' | 'dark'
