@@ -2,31 +2,32 @@ name: CI
 on: [push]
 jobs:
   build:
-    name: Build, lint, and test on Node ${{ matrix.node }} and ${{ matrix.os }}
-
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        node: ["14.x"]
-        os: [macOS-latest]
+    name: Ttest, lint and build. Then deploy Storybook
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.1
 
-      - name: Use Node ${{ matrix.node }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node }}
-
-      - name: Install deps and build (with cache)
-        uses: bahmutov/npm-install@v1
-
-      - name: Lint
-        run: yarn lint
+      - name: Install and Build
+        run: yarn install
 
       - name: Test
         run: yarn test --ci --coverage --maxWorkers=2
 
+      - name: Lint
+        run: yarn lint
+
       - name: Build
         run: yarn build
+
+      - name: Install and Build 🔧
+        run: yarn build-storybook
+      - name: Deploy Storybook
+        uses: JamesIves/github-pages-deploy-action@3.6.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ghpages # The branch the action should deploy to.
+          FOLDER: docs-build # The folder that the build-storybook script generates files.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
+          TARGET_FOLDER: docs # The folder that we serve our Storybook files from
+
