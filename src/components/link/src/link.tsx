@@ -9,25 +9,25 @@ export interface LinkProps {
    * Text inside the link
    * @default Link Text Here
    */
-  text: string,
+  text: string;
 
   /**
    * Link's href
-   * 
+   *
    * @default '#'
    */
-  href: string
+  href: string;
 }
 
 /**
  * Trying out a custom link component
  * @author Insider Intelligence
  */
-export const IILink: FC<LinkProps> = ({text, ...rest}) => {
+export const IILink: FC<LinkProps> = ({ text, ...rest }) => {
   return <Link {...rest}>{text}</Link>;
 };
 
 IILink.defaultProps = {
   text: 'Link Text Here',
-  href: '#'
-}
+  href: '#',
+};

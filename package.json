@@ -15,6 +15,7 @@
     "test": "lerna exec tsdx test -- --passWithNoTests",
     "build": "lerna exec tsdx build",
     "lint": "lerna exec tsdx lint",
+    "lint:fix": "lerna exec tsdx lint -- --fix",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs-build"
   },

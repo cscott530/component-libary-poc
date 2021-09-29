@@ -1,4 +1,4 @@
 import { IILink, LinkProps } from './link';
 
-export { IILink }
-export type { LinkProps }
+export { IILink };
+export { LinkProps };

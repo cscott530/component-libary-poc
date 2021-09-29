@@ -1,4 +1,4 @@
-import { IIForm, FormProps } from "./form";
+import { IIForm, FormProps } from './form';
 
 export { IIForm };
-export type { FormProps };
+export { FormProps };

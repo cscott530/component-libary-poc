@@ -1,4 +1,4 @@
 import { IIButton, ButtonProps } from './button';
 
-export { IIButton }
-export type { ButtonProps }
+export { IIButton };
+export { ButtonProps };
