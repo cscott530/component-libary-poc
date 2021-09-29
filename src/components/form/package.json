@@ -45,7 +45,6 @@
     "typescript": "^4.4.3"
   },
   "dependencies": {
-    "@ii/button": "../button",
     "styled-components": "^5.3.1"
   },
   "gitHead": "00fc62d9b371aa71503e2b5b67f32e4700401370"

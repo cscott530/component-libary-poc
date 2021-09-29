@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Form } from './form.styled';
-import { IIButton } from '@ii/button';
 
 export interface FormProps {
   theme?: 'light' | 'dark'
@@ -12,9 +11,6 @@ export const IIForm: React.FC<FormProps> = ({
 }) => {
   return (<Form theme={theme}>
     {rest.children}
-    <div>
-      <IIButton />
-    </div>
   </Form>);
 };
 
