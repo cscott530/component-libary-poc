@@ -3,12 +3,15 @@ on: [push]
 jobs:
   build:
     name: Ttest, lint and build. Then deploy Storybook
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
 
-      - name: Install and Build
+      - name: Install
         run: yarn install
 
       - name: Test
@@ -20,8 +23,9 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Install and Build 🔧
+      - name: Build Storybook
         run: yarn build-storybook
+
       - name: Deploy Storybook
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
