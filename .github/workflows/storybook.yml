@@ -1,7 +1,7 @@
 name: Storybook Deployment
 on:
   push:
-    branches: "main"
+    branches: "LastLernaCommit"
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest

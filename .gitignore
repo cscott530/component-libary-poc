@@ -3,7 +3,6 @@
 node_modules
 .cache
 dist
-docs/*
-!docs/.gitkeep
+docs
 storybook-static
 docs-build
