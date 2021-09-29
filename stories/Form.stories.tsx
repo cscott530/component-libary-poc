@@ -1,6 +1,8 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { IIForm, FormProps } from '../src';
+import { IIButton } from '../src';
+import { IILink } from '../src';
 
 const meta: Meta = {
   title: 'Atoms/Form',
@@ -24,11 +26,17 @@ const Template: Story<FormProps> = args => <IIForm {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  theme: 'light'
+  theme: 'light',
+  children: (<>
+    <IIButton text="Light Form" rounded primary />
+  </>)
 };
 
 export const DarkTheme = Template.bind({});
 
 DarkTheme.args = {
-  theme: 'dark'
+  theme: 'dark',
+  children: (<>
+    <IIButton text="Dark Form" primary />
+  </>)
 };
