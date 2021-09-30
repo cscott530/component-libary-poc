@@ -1,4 +1,1 @@
-import { IIButton, ButtonProps } from './button';
-
-export { IIButton };
-export { ButtonProps };
+export { IIButton, ButtonProps } from './button';

@@ -42,3 +42,7 @@ import { IILogo } from "./components/IILogo";
 // Import & Export IILogo 
 import { IILogo } from "./components/IILogo"; 
 export { IILogo }; 
+
+// Import & Export footer 
+import { footer } from "./components/footer"; 
+export { footer }; 

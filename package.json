@@ -14,8 +14,8 @@
     "postinstall": "lerna exec yarn",
     "test": "lerna exec tsdx test -- --passWithNoTests",
     "build": "lerna exec tsdx build",
-    "lint": "lerna exec tsdx lint",
-    "lint:fix": "lerna exec tsdx lint -- --fix",
+    "lint": "lerna exec tsdx lint -- src",
+    "lint:fix": "lerna exec tsdx lint -- src --fix",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs-build",
     "new-component": "node ./util/create-component"
