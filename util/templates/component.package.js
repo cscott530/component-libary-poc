@@ -1,5 +1,6 @@
 module.exports = (componentName) => ({
-  content: `{  "version": "0.0.1",
+  content: `{  
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

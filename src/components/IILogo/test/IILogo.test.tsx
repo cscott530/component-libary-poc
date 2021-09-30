@@ -10,4 +10,3 @@ describe('it', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 });
-
