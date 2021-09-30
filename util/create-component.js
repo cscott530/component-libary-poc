@@ -63,7 +63,17 @@ fs.appendFile(exportDirectory, appendIndexExports, function (err) {
 
 
 
-console.log("Install dependencies, now. This may take a while.");
 // Now do install
 process.chdir(componentDirectory);
-exec(`yarn add -D husky react @types/react react-dom @types/react-dom tsdx tslib typescript styled-components @types/styled-components`);
+
+console.log("Install dependencies, now. This may take a while.");
+exec(`yarn add styled-components @types/styled-components`);
+console.log(
+  "Done!" + componentDirectory.green
+);
+
+console.log("Install dev dependencies, now. This may take a while.");
+exec(`yarn add -D husky react @types/react react-dom @types/react-dom tsdx tslib typescript`);
+console.log(
+  "Done!" + componentDirectory.green
+);
