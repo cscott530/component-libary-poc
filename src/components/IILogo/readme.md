@@ -1,10 +1,10 @@
-_This readme was generated with `util/create-component`.
+_This readme was generated with `util/create-component`._
 
-  ## IILogo
-  ----
+## IILogo
+----
 
-  This component can be installed with:
+This component can be installed with:
 
-  ```
-  yarn add @ii\IILogo
-  ```
+```
+yarn add @ii\iilogo
+```
