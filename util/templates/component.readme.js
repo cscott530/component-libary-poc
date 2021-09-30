@@ -6,7 +6,7 @@ module.exports = (componentName) => ({
   This component can be installed with:
 
   \`\`\`
-  yarn add @ii\\${componentName}
+  yarn add @ii\\${componentName.toLowerCase()}
   \`\`\`
 `,
   fileName: `readme.md`,
