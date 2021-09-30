@@ -1,8 +1,7 @@
 module.exports = (componentName) => ({
-  content: `_This readme was generated with \`util/create-component\`.
+  content: `_This readme was generated with \`util/create-component\`._
 
   ## ${componentName}
-  ----
 
   This component can be installed with:
 
