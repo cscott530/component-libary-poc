@@ -1,5 +1,7 @@
 name: CI
-on: [push]
+on:
+  push:
+    - main
 jobs:
   build:
     name: Test, lint and build. Then deploy Storybook
