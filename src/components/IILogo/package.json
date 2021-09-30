@@ -32,7 +32,7 @@
   "author": "Insider Intelligence",
   "module": "dist/iilogo.esm.js",
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16.8.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.26",

@@ -32,7 +32,7 @@ module.exports = (componentName) => ({
   "author": "Insider Intelligence",
   "module": "dist/${componentName.toLowerCase()}.esm.js",
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16.8.0"
   }
 }
 
