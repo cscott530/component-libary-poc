@@ -46,3 +46,11 @@ export { IILogo };
 // Import & Export footer 
 import { footer } from "./components/footer"; 
 export { footer }; 
+
+// Import & Export footer 
+export { footer }; 
+import { footer } from "./components/footer"; 
+
+// Import & Export footer 
+import { footer } from "./components/footer"; 
+export { footer }; 
