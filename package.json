@@ -17,7 +17,8 @@
     "lint": "lerna exec tsdx lint",
     "lint:fix": "lerna exec tsdx lint -- --fix",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o docs-build"
+    "build-storybook": "build-storybook -o docs-build",
+    "new-component": "node ./util/create-component"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -35,6 +36,7 @@
     "@types/react-dom": "^17.0.9",
     "@types/styled-components": "^5.1.14",
     "babel-loader": "^8.2.2",
+    "child_process": "^1.0.2",
     "colors": "^1.4.0",
     "husky": "^7.0.2",
     "lerna": "^4.0.0",

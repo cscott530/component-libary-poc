@@ -5,5 +5,6 @@ export interface ${componentName}Props {
     description?: string;
 }
 `,
+  directory: `/src/`,
   extension: `.types.ts`,
 });

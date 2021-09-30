@@ -1,19 +1,18 @@
-module.exports = (componentName) => ({
-  content: `// Generated with util/create-component.js
+// Generated with util/create-component.js
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { ${componentName} } from "../src";
-import { ${componentName}Props } from "../src";
+import { IILogo } from "../src";
+import { IILogoProps } from "../src";
 
 export default {
-  title: "Components/${componentName}",
-  component: ${componentName},
+  title: "Components/IILogo",
+  component: IILogo,
   argTypes: {
     // any default props
   },
 } as Meta;
 
-const Template: Story<${componentName}Props> = (args) => <${componentName} {...args} />;
+const Template: Story<IILogoProps> = (args) => <IILogo {...args} />;
 
 // DEFINE YOUR TYPES OF STORIES HERE WITH WHATEVER ARG PROPS YOU WANT TO TEST
 
@@ -30,7 +29,3 @@ NoDescription.args = {
   title: "This is a sample title",
 };
 
-`,
-  extension: `.stories.tsx`,
-  directory: `/stories/`
-});

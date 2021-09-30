@@ -16,5 +16,6 @@ export const ${componentName}: React.FC<${componentName}Props> = ({ title, descr
 );
 
 `,
+  directory: `/src/`,
   extension: `.tsx`,
 });

@@ -18,4 +18,5 @@ export const ${componentName}Description = styled.h2\`
 
 `,
   extension: `.styles.tsx`,
+  directory: `/src/`
 });
