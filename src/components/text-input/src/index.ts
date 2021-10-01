@@ -1,4 +1,1 @@
-import { TextInput, TextInputProps } from './TextInput';
-
-export { TextInput };
-export { TextInputProps };
+export { TextInput, TextInputProps } from './TextInput';\

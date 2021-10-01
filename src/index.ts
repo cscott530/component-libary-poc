@@ -1,4 +1,4 @@
-// import { IIButton, ButtonProps } from './components/button';
+export { IIButton, ButtonProps } from './components/button';
 // import { IILink, LinkProps } from './components/link';
 export { TextInput, TextInputProps } from './components/text-input';
 // import { IIForm, FormProps } from './components/form';
