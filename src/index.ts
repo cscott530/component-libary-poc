@@ -7,50 +7,5 @@ export { IILink, LinkProps };
 export { IIButton, ButtonProps };
 export { TextInput, TextInputProps };
 export { IIForm, FormProps };
-// Import & Export IILogo 
-import { IILogo } from "./components/IILogo"; 
-export { IILogo }; 
 
-// Import & Export IILogo 
-import { IILogo } from "./components/IILogo"; 
-export { IILogo }; 
-import { IILogo } from "./components/IILogo"; 
-
-// Import & Export IILogo 
-export { IILogo }; 
-
-// Import & Export IILogo 
-import { IILogo } from "./components/IILogo"; 
-export { IILogo }; 
-
-// Import & Export IILogo 
-import { IILogo } from "./components/IILogo"; 
-export { IILogo }; 
-
-// Import & Export IILogo 
-import { IILogo } from "./components/IILogo"; 
-export { IILogo }; 
-
-// Import & Export IILogo 
-import { IILogo } from "./components/IILogo"; 
-export { IILogo }; 
-
-// Import & Export IILogo 
-export { IILogo }; 
-import { IILogo } from "./components/IILogo"; 
-
-// Import & Export IILogo 
-import { IILogo } from "./components/IILogo"; 
-export { IILogo }; 
-
-// Import & Export footer 
-import { footer } from "./components/footer"; 
-export { footer }; 
-
-// Import & Export footer 
-export { footer }; 
-import { footer } from "./components/footer"; 
-
-// Import & Export footer 
-import { footer } from "./components/footer"; 
-export { footer }; 
+export { IILogo, IILogoProps } from './components/IILogo';
