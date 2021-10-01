@@ -45,5 +45,8 @@
     "tslib": "^2.3.1",
     "typescript": "^4.4.3"
   },
-  "gitHead": "6c2eaf5cc6885a0bb81c0fdfa34247e75b18808c"
+  "gitHead": "6c2eaf5cc6885a0bb81c0fdfa34247e75b18808c",
+  "dependencies": {
+    "styled-components": "^5.3.1"
+  }
 }
