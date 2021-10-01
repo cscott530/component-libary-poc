@@ -36,7 +36,7 @@ generatedTemplates.forEach((template) => {
   );
 });
 
-fs.copyFileSync('./util/templates/tsconfig.json', `${componentDirectory}/tsconfig.json`)
+fs.copyFileSync('./util/templates/tsconfig.jsonc', `${componentDirectory}/tsconfig.json`)
 
 console.log(
   "Successfully created component under: " + componentDirectory.green
