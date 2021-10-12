@@ -46,7 +46,7 @@ console.log(
 const exportDirectory = `./src/index.ts`;
 
 const appendIndexComments = `\n// Import & Export ${componentName} \n`;
-const appendIndexImports = `export { ${componentName}, ${componentName}Props } from "./components/${componentName}/src"; \n`;
+const appendIndexImports = `export { ${componentName}, ${componentName}Props } from './components/${componentName}/src'; \n`;
 
 fs.appendFile(exportDirectory, appendIndexComments, function (err) {
   if (err) throw err;
@@ -68,7 +68,7 @@ console.log(
 );
 
 console.log("Installing dev dependencies. This may take a while.");
-exec(`yarn add -D husky react @types/react react-dom @types/react-dom tsdx tslib typescript @types/styled-components`);
+exec(`yarn add -D husky react @types/react react-dom @types/react-dom tsdx tslib typescript @types/styled-components @typescript-eslint/parser`);
 console.log(
   "Done!" + componentDirectory.green
 );

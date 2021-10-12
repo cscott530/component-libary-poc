@@ -6,7 +6,8 @@ import React from 'react';
 import { ${componentName}Props } from './${componentName}.types';
 
 // Import Styled Components
-import { ${componentName}Wrapper,
+import {
+  ${componentName}Wrapper,
   ${componentName}Heading,
   ${componentName}Description,
 } from './${componentName}.styles';

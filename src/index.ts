@@ -9,3 +9,6 @@ export { IIButton, ButtonProps } from './components/button/src';
 // export { IIForm, FormProps };
 
 // export { IILogo, IILogoProps } from './components/IILogo';
+
+// Import & Export SvgImages 
+export { SvgImages, SvgImagesProps } from './components/SvgImages/src'; 
