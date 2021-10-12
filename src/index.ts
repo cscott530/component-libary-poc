@@ -1,6 +1,7 @@
-// export { IIButton, ButtonProps } from './components/button';
+// This file is just a convenience to expose the types for the global storybook.
+export { IIButton, ButtonProps } from './components/button/src';
 // import { IILink, LinkProps } from './components/link';
-export { TextInput, TextInputProps } from './components/text-input';
+// export { TextInput, TextInputProps } from './components/text-input';
 // import { IIForm, FormProps } from './components/form';
 
 // export { IILink, LinkProps };
