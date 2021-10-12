@@ -46,8 +46,7 @@ console.log(
 const exportDirectory = `./src/index.ts`;
 
 const appendIndexComments = `\n// Import & Export ${componentName} \n`;
-const appendIndexImports = `import { ${componentName} } from "./components/${componentName}"; \n`;
-const appendIndexExports = `export { ${componentName} }; \n`;
+const appendIndexImports = `export { ${componentName}, ${componentName}Props } from "./components/${componentName}/src"; \n`;
 
 fs.appendFile(exportDirectory, appendIndexComments, function (err) {
   if (err) throw err;
@@ -57,23 +56,25 @@ fs.appendFile(exportDirectory, appendIndexImports, function (err) {
   if (err) throw err;
 });
 
-fs.appendFile(exportDirectory, appendIndexExports, function (err) {
-  if (err) throw err;
-});
-
 
 
 // Now do install
 process.chdir(componentDirectory);
 
 console.log("Installing dependencies.");
-exec(`yarn add styled-components @types/styled-components`);
+exec(`yarn add styled-components`);
 console.log(
   "Done!" + componentDirectory.green
 );
 
 console.log("Installing dev dependencies. This may take a while.");
-exec(`yarn add -D husky react @types/react react-dom @types/react-dom tsdx tslib typescript`);
+exec(`yarn add -D husky react @types/react react-dom @types/react-dom tsdx tslib typescript @types/styled-components`);
+console.log(
+  "Done!" + componentDirectory.green
+);
+
+console.log('Finalizing....')
+exec('yarn');
 console.log(
   "Done!" + componentDirectory.green
 );
