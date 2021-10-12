@@ -5,8 +5,9 @@ import { Story, Meta } from "@storybook/react/types-6-0";
 import { ${componentName} } from "../src";
 import { ${componentName}Props } from "../src";
 
+// We're following Atomic design. So, by default, assuming a new component is the smallest unit.
 export default {
-  title: "Components/${componentName}",
+  title: "Molecules/${componentName}",
   component: ${componentName},
   argTypes: {
     // any default props

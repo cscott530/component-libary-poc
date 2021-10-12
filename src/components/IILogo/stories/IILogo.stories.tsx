@@ -5,7 +5,7 @@ import { IILogo } from "../src";
 import { IILogoProps } from "../src";
 
 export default {
-  title: "Components/IILogo",
+  title: "Molecules/IILogo",
   component: IILogo,
   argTypes: {
     // any default props
