@@ -1,35 +1,52 @@
 // Generated with util/create-component.js
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { Check } from "../src";
+import {
+  Check, 
+  Facebook as FacebookSvg, 
+  Twitter as TwitterSvg, 
+  LinkedIn as LinkedInSvg, 
+  Envelope as EnvelopeSvg, 
+  NewsLetterChart as NewsLetterChartSvg, 
+  AuthorBrandDesktop as AuthorBrandDesktopSvg, 
+  AuthorBrandMobile as AuthorBrandMobileSvg 
+} from '../src';
 
-let component = (<div>
-  <div>Check: <Check /></div>
-</div>>);
+let _empty: React.FC<{}> = () => <div />;
 
 // We're following Atomic design. So, by default, assuming a new component is the smallest unit.
 export default {
-  title: "Molecules/SvgIcons",
-  component: component,
+  title: "Molecules/Icons",
+  component: _empty,
   argTypes: {
     // any default props
   },
 } as Meta;
 
-const Template: Story<SvgIconsProps> = (args) => <SvgIcons {...args} />;
+const CheckTemplate: Story = () => <Check />;
+export const Checkmark = CheckTemplate.bind({});
 
-// DEFINE YOUR TYPES OF STORIES HERE WITH WHATEVER ARG PROPS YOU WANT TO TEST
+const FacebookTemplate: Story = () => <FacebookSvg />;
+export const Facebook = FacebookTemplate.bind({});
 
-export const Default = Template.bind({});
+const TwitterTemplate: Story = () => <TwitterSvg />;
+export const Twitter = TwitterTemplate.bind({});
 
-Default.args = {
-  title: "This is a sample title",
-  description: "This is a sample description",
-};
+const LinkedInTemplate: Story = () => <LinkedInSvg />;
+export const LinkedIn = LinkedInTemplate.bind({});
 
-export const NoDescription = Template.bind({});
+const EnvelopeTemplate: Story = () => <EnvelopeSvg />;
+export const Envelope = EnvelopeTemplate.bind({});
 
-NoDescription.args = {
-  title: "This is a sample title",
-};
+const NewsLetterChartTemplate: Story = () => <NewsLetterChartSvg />;
+export const NewsLetterChart = NewsLetterChartTemplate.bind({});
+NewsLetterChart.storyName = "Newsletter Chart";
 
+const AuthorBrandDesktopTemplate: Story = () => <AuthorBrandDesktopSvg />;
+export const AuthorBrandDesktop = AuthorBrandDesktopTemplate.bind({});
+AuthorBrandDesktop.storyName = "Author Brand/Desktop";
+
+
+const AuthorBrandMobileTemplate: Story = () => <AuthorBrandMobileSvg />;
+export const AuthorBrandMobile = AuthorBrandMobileTemplate.bind({});
+AuthorBrandMobile.storyName = "Author Brand/Mobile";
