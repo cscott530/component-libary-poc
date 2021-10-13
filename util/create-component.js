@@ -42,23 +42,7 @@ console.log(
   "Successfully created component under: " + componentDirectory.green
 );
 
-// Add newly generated component to index.ts export
-const exportDirectory = `./src/index.ts`;
-
-const appendIndexComments = `\n// Import & Export ${componentName} \n`;
-const appendIndexImports = `export { ${componentName}, ${componentName}Props } from './components/${componentName}/src'; \n`;
-
-fs.appendFile(exportDirectory, appendIndexComments, function (err) {
-  if (err) throw err;
-});
-
-fs.appendFile(exportDirectory, appendIndexImports, function (err) {
-  if (err) throw err;
-});
-
-
-
-// Now do install
+// Now do install. CD into new component's directory and install its components
 process.chdir(componentDirectory);
 
 console.log("Installing dependencies.");
