@@ -1,13 +1,16 @@
 // Generated with util/create-component.js
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { SvgIcons } from "../src";
-import { SvgIconsProps } from "../src";
+import { Check } from "../src";
+
+let component = (<div>
+  <div>Check: <Check /></div>
+</div>>);
 
 // We're following Atomic design. So, by default, assuming a new component is the smallest unit.
 export default {
   title: "Molecules/SvgIcons",
-  component: SvgIcons,
+  component: component,
   argTypes: {
     // any default props
   },
