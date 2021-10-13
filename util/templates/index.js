@@ -6,6 +6,7 @@ const componentStyles = require("./component.styles");
 const packageJson = require('./component.package');
 const readme = require('./component.readme');
 const componentIndex = require('./component.index');
+const componentNpmrc = require('./component.npmrc');
 
 module.exports = [
   component,
@@ -15,5 +16,6 @@ module.exports = [
   componentStyles,
   packageJson,
   readme,
-  componentIndex
+  componentIndex,
+  componentNpmrc
 ];

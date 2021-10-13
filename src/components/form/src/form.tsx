@@ -3,6 +3,7 @@ import { Form } from './form.styled';
 
 export interface FormProps {
   theme?: 'light' | 'dark';
+  children?: JSX.Element | JSX.Element[]
 }
 
 export const IIForm: React.FC<FormProps> = ({ theme, ...rest }) => {
@@ -11,4 +12,5 @@ export const IIForm: React.FC<FormProps> = ({ theme, ...rest }) => {
 
 IIForm.defaultProps = {
   theme: 'light',
+  children: <></>
 };
